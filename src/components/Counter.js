@@ -8,11 +8,16 @@ const Counter = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>
-            <h1>Counter: {counterValue.counterValue}</h1>
-            <button onClick={() => dispatch(increaseCounter(+10))}>increase counter</button>
-            <button onClick={() => dispatch(decreaseCounter(+20))}>decrease counter</button>
-            <button onClick={() => dispatch(resetCounter())}>reset counter</button>
+        
+        <div >
+            <h1 > Counter: {counterValue.counterValue} </h1>
+            <button onClick={() => dispatch(increaseCounter(+10))} > increase counter </button>
+            <button onClick={() => dispatch(decreaseCounter(+20))} > decrease counter </button>
+            <button onClick={() => dispatch(resetCounter())} > reset counter </button>
+            <p>540$ <del>450$</del></p>
+            {
+                counterValue && <p>mohammad</p>
+            }
         </div>
     );
 };
