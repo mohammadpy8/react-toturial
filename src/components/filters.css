@@ -1,0 +1,65 @@
+.container {
+    background-color: #D9D9D9;
+    margin:0 250px;
+    box-shadow: 0 0 4px #D9D9D9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+.entries {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.number-select {
+    height: 30px;
+    margin-top: 8px;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec1, .sec2 , .sec3 {
+    padding: 0 25px;
+}
+
+.vahed, .bakhsh {
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    height: 30px;
+    padding: 0 15px;
+}
+
+.search {
+    background-color: #6E05AD;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search:hover {
+    background-color: #8b03da;
+}

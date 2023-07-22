@@ -1,0 +1,20 @@
+.txtsearch__input {
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.hearder-search {
+    padding-right: 15px;
+}
+
+.header-nav-txtsearch {
+    border: 2px solid #c4c4c4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    padding: 0.25rem;
+    max-height: 25px;
+}

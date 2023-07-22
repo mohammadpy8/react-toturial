@@ -1,13 +1,19 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter';
-import Number from './components/Number';
+import Fliters from './components/Fliters';
+import MenuBar from './components/MenuBar';
+import Pagination from './components/Pagination';
+import ShowContacts from './components/ShowContacts';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <Counter />
-      <Number />
+    <div>
+      <Header />
+      <Fliters />
+      <MenuBar />
+      <ShowContacts />
+      <Pagination />
     </div>
   );
 }
