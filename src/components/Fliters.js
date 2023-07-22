@@ -8,7 +8,7 @@ const Fliters = () => {
             <div className='filters'>
                 <div className='entries'>
                     <h2 className='text'>نمایش</h2>
-                    <select className='number-select'>
+                    <select className='number-select' id='test'>
                         <option value="10">10</option>
                         <option value="20">20</option>
                         <option value="30">30</option>

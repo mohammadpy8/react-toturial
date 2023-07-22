@@ -5,16 +5,18 @@ import MenuBar from './components/MenuBar';
 import Pagination from './components/Pagination';
 import ShowContacts from './components/ShowContacts';
 import Header from './components/Header';
+import Slider from './components/slider/Slider';
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <Fliters />
       <MenuBar />
       <ShowContacts />
       <Pagination />
-    </div>
+      <Slider />
+    </>
   );
 }
 
