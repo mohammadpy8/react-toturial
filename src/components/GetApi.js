@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
-// import axios from "axios";
+import axios from "axios";
 
 const GetApi = () => {
 
@@ -49,11 +49,12 @@ const GetApi = () => {
         })
     }
 
-//     useEffect(() => {
+    useEffect(() => {
 
-//         sendingApi();
+        axios.get("https://jsonplaceholder.typicode.com/posts")
+            .then(res => setAllUsersData(res.data));
 
-//   }, [dataBody]);
+  }, []);
 
   console.log(allUsersData);
 
