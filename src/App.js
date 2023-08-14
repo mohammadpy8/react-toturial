@@ -1,17 +1,13 @@
 import React from "react";
 
-import Counter from "./components/counter/Counter";
-
-import "./App.css";
-import GetApi from "./components/GetApi";
-import GetApiWithReducer from "./components/GetApiWithReducer";
-import Reducer from "./components/Reducer";
+import ProductsContextProvider from "./context/ProductsContextProvider";
+import Store from "./components/Store";
 
 function App() {
   return (
-    <Reducer>
-      <Counter />
-    </Reducer>
+    <ProductsContextProvider>
+      <Store />
+    </ProductsContextProvider>
   );
 }
 
