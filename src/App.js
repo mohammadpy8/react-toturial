@@ -1,11 +1,12 @@
 import React from 'react';
 
 import "./App.css";
+import GetApi from './components/GetApi';
 
 function App() {
   return (
     <div>
-      app
+      <GetApi />
     </div>
   )
 }
