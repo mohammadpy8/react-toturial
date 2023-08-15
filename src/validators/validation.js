@@ -18,7 +18,7 @@ const validate = (state) => {
 
     if (!state.password) {
         errors.password = "password required";
-    } else if (state.password.length > 6) {
+    } else if (state.password.length < 6) {
         errors.password = "password great than 6 characters";
     } else {
         delete errors.password;
