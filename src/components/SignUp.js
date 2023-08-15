@@ -45,6 +45,13 @@ const SignUp = () => {
         confirmPassword: "",
         isAccepted: false,
       });
+      setTouched({
+        name: false,
+        email: false,
+        password: false,
+        confirmPassword: false,
+        isAccepted: false,
+      });
     } else {
       toast.error("comolet informations");
       setTouched({
