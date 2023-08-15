@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+import validate from "../validators/Validation";
 
 const SignUp = () => {
 
@@ -10,13 +12,22 @@ const SignUp = () => {
     confirmPassword: "",
     isAccepted: false,
   });
+    
+    const [errors, setErrors] = useState({});
+    
+    
+    useEffect(() => {
 
-    const changeHandler = (event) => {
+        setErrors(validate(data));
+
+    }, [data]);
+
+   const changeHandler = (event) => {
       
         if (event.target.name === "isAccepted") {
 
             setData({ ...data, [event.target.name]: event.target.checked });
-            
+
         } else {
 
             setData({ ...data, [event.target.name]: event.target.value });
