@@ -12,8 +12,7 @@ import Navbar from "./components/common/Navbar";
 import ShopCart from "./components/ShopCart";
 
 import SignUp from "./components/SignUp";
-import Counter from "./components/Counter";
-import ReduxValue from "./redux/reduxAtt";
+import Users from "./components/Users";
 
 function App() {
   return (
@@ -32,9 +31,9 @@ function App() {
     //       <Route path="/signup" element={<SignUp />} />
     //       <Route path="*" element={<Navigate to="/signup" replace/>} />
     //   </Routes>
-    <ReduxValue>
-      <Counter />
-    </ReduxValue>
+    <div>
+      <Users />
+    </div>
   );
 }
 
