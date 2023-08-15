@@ -134,7 +134,17 @@ const SignUp = () => {
           <button type="submit">Sign Up</button>
         </div>
       </form>
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          className: '',
+          style: {
+            border: '2px solid red',
+            padding: '20px',
+            color: 'white',
+            fontSize: "1.5rem",
+            backgroundColor: "#fd8080"
+          },
+        }}/>
     </div>
   );
 };

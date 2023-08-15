@@ -12,6 +12,8 @@ import Navbar from "./components/common/Navbar";
 import ShopCart from "./components/ShopCart";
 
 import SignUp from "./components/SignUp";
+import Counter from "./components/Counter";
+import ReduxValue from "./redux/reduxAtt";
 
 function App() {
   return (
@@ -26,10 +28,13 @@ function App() {
     //     </Routes>
     //   </CartContextProvider>
     // </ProductsContextProvider>
-          <Routes>
-              <Route path="/signup" element={<SignUp />} />
-              <Route path="*" element={<Navigate to="/signup" replace/>} />
-          </Routes>
+    //   <Routes>
+    //       <Route path="/signup" element={<SignUp />} />
+    //       <Route path="*" element={<Navigate to="/signup" replace/>} />
+    //   </Routes>
+    <ReduxValue>
+      <Counter />
+    </ReduxValue>
   );
 }
 
