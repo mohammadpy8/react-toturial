@@ -14,6 +14,7 @@ import ShopCart from "./components/ShopCart";
 import SignUp from "./components/SignUp";
 import Users from "./components/Users";
 import Counter from "./components/Counter";
+import UsersExtra from "./components/UsersExtra";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
     //   </Routes>
     <div>
       <Counter />
+      <UsersExtra />
     </div>
   );
 }
