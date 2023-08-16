@@ -13,6 +13,7 @@ import ShopCart from "./components/ShopCart";
 
 import SignUp from "./components/SignUp";
 import Users from "./components/Users";
+import Counter from "./components/Counter";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
     //       <Route path="*" element={<Navigate to="/signup" replace/>} />
     //   </Routes>
     <div>
-      <Users />
+      <Counter />
     </div>
   );
 }
